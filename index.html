@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Time Converter</title>
+
+	<link href="./css/normalize.css" rel="stylesheet">
+	<link href="./css/style.css" rel="stylesheet">
+
+	<!-- ! defer для скриптов в head ОБЯЗАТЕЛЕН -->
+	<script src="./js/script.js" defer></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<section class="first">
+			<div class="first__img">
+				<img src="./images/bg.jpg" alt="background image">
+			</div>
+			<div class="container">
+				<div class="first__body">
+					<h1 class="first__title">Time Converter</h1>
+					<div class="first__content">
+						<p class="first__text">
+							Enter the values:
+						</p>
+						<div class="first__input-box input-box">
+							<div class="input-box__column">
+								<label for="input-days">Days</label>
+								<input class="input-box__input" id="input-days" type="number" placeholder="0">
+							</div>
+							<div class="input-box__column">
+								<label for="input-hours">Hours</label>
+								<input class="input-box__input" id="input-hours" type="number" placeholder="0">
+							</div>
+							<div class="input-box__column">
+								<label for="input-minutes">Minutes</label>
+								<input class="input-box__input" id="input-minutes" type="number" placeholder="0">
+							</div>
+							<div class="input-box__column">
+								<label for="input-seconds">Seconds</label>
+								<input class="input-box__input" id="input-seconds" type="number" placeholder="0">
+							</div>
+						</div>
+						<p class="first__text">
+							Select the final format of time:
+						</p>
+						<div class="first__selector selector">
+							<div class="selector__input-box">
+								<input class="selector__input" type="text" value="" readonly>
+							</div>
+							<ul class="selector__list">
+								<li class="selector__list-item">
+									<button class="selector__btn" type="button">
+										Days
+									</button>
+								</li>
+								<li class="selector__list-item">
+									<button class="selector__btn" type="button">
+										Hours
+									</button>
+								</li>
+								<li class="selector__list-item">
+									<button class="selector__btn" type="button">
+										Minutes
+									</button>
+								</li>
+								<li class="selector__list-item">
+									<button class="selector__btn" type="button">
+										Seconds
+									</button>
+								</li>
+							</ul>
+						</div>
+						<button class="first__btn" type="button">Get the result</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="modal-box">
+			<div class="modal">
+				<p class="modal__result">
+					Your answer is <span></span>
+				</p>
+				<button class="modal__btn-close">Close</button>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

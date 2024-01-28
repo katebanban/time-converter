@@ -1,0 +1,65 @@
+// Убираем стрелочки вверх/вниз у input[type=number]
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+	min-height: 100vh;
+}
+
+img,
+svg,
+source {
+	max-width: 100%;
+}
+
+a,
+input,
+button,
+textarea,
+select,
+option {
+	cursor: pointer;
+	font: inherit;
+}
+
+body {
+	font-family: "Chakra Petch", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	color: #2c2b29;
+	line-height: 1.2;
+	background: #e2cfa8;
+}
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.container {
+	max-width: calc(700px + 30px);
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
